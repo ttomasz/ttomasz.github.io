@@ -20,6 +20,9 @@ layout: default
   <h1 class="post-title">{{ page.title }}</h1>
   <div class="post-line"></div>
 
+  {% include toc.html html=content %}
+  <br><br>
+
   {{ content }}
 </div>
 
