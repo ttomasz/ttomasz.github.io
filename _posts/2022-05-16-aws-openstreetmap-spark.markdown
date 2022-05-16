@@ -6,7 +6,7 @@ author: tomasz
 tags: OpenStreetMap Spark
 ---
 
-AWS [recently announced](https://aws.amazon.com/de/blogs/big-data/querying-openstreetmap-with-amazon-athena/) that OpenStreetMap data will be available among their open datasets. If you don't want to use it in the cloud with Athena and pay per query like they described in their blog post you can download the data for free and analyse it locally with Spark.
+I recently found in [OSM Weekly](https://weeklyosm.eu/pl/archives/15538) an [AWS blog post](https://aws.amazon.com/de/blogs/big-data/querying-openstreetmap-with-amazon-athena/) showing how you can query OpenStreetMap data that AWS hosts in their Public Datasets using Athena. If you don't want to query it in the cloud with Athena and pay per query like they described in their blog post you can download the data for free and analyse it locally with Spark.
 
 # Download the data
 
