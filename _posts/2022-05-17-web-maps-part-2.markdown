@@ -42,6 +42,12 @@ Tiles are saved into a single file - similarly to MBTILES. This file is internal
 
 With this format one can create fully static websites serving maps even for an entire planet.
 
+#### COMTiles
+
+[Github repo](https://github.com/mactrem/com-tiles)
+
+Cloud Optimized Map Tiles. Project similar to PMTILES.
+
 ### Schemas
 
 To use any data you need to know its structure - what columns or attributes are available and what values in them mean. This structure is called a schema.
