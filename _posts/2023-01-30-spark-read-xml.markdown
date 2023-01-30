@@ -44,7 +44,15 @@ We'll define schema so it's faster.
 
 Fragment of XML file:
 ```xml
-
+<?xml version="1.0" encoding="UTF-8"?>
+<osm license="http://opendatacommons.org/licenses/odbl/1-0/" copyright="OpenStreetMap and contributors" version="0.6" generator="planet-dump-ng 1.2.4" attribution="http://www.openstreetmap.org/copyright" timestamp="2023-01-16T01:00:02Z">
+ <bound box="-90,-180,90,180" origin="http://www.openstreetmap.org/api/0.6"/>
+ <changeset id="1" created_at="2005-04-09T19:54:13Z" closed_at="2005-04-09T20:54:39Z" open="false" user="Steve" uid="1" min_lat="51.5288506" min_lon="-0.1465242" max_lat="51.5288620" max_lon="-0.1464925" num_changes="2" comments_count="33"/>
+ <changeset id="909337" created_at="2009-04-23T08:06:48Z" closed_at="2009-04-23T08:06:51Z" open="false" user="Alberto58" uid="91650" min_lat="44.4486102" min_lon="11.6230873" max_lat="44.4623357" max_lon="11.6425428" num_changes="40" comments_count="0">
+  <tag k="comment" v="Via Graffio"/>
+  <tag k="created_by" v="JOSM"/>
+ </changeset>
+ </osm>
 ```
 
 Spark schema:
