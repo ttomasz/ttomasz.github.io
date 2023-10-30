@@ -6,6 +6,8 @@ author: tomasz
 tags: OpenStreetMap Spark
 ---
 
+__Edit: fixed xml schema which had an error__
+
 Databricks [created a library](https://github.com/databricks/spark-xml) that allows Spark to parse XML files.
 
 Here I'll convert OpenStreetMap dump of [changesets](https://wiki.openstreetmap.org/wiki/Changeset) that can be downloaded from [planet.osm.org](https://planet.osm.org).
@@ -57,7 +59,7 @@ Fragment of XML file:
 
 Spark schema:
 ```python
-from pyspark.sql.types import StructType, StructField, StringType, IntegerType, TimestampType, DoubleType
+from pyspark.sql.types import StructType, StructField, StringType, IntegerType, TimestampType, DoubleType, ArrayType
 from pyspark.sql import functions as f
 
 schema = StructType([
@@ -73,10 +75,10 @@ schema = StructType([
     StructField("max_lon", DoubleType()),
     StructField("num_changes", IntegerType()),
     StructField("comments_count", IntegerType()),
-    StructField("tag", StructType([
+    StructField("tag", ArrayType(StructType([
         StructField("k", StringType()),
         StructField("v", StringType()),
-    ])),
+    ]))),
 ])
 ```
 
