@@ -126,10 +126,10 @@ The same could be achieved using a subquery instead of CTE but CTEs are more rea
 
 | product_name               | created_at             | modified_at            | amount | units | requires_cold_storage | promoted |
 |----------------------------|------------------------|------------------------|--------|-------|-----------------------|----------|
-| Bottled Mineral Water 1,5l | 2025-01-02 06:53:11+00 | 2025-01-02 06:53:11+00 | 1,5    | l     |                       | false    |
-| Frozen Vegetable Mix       | 2025-01-02 06:55:40+00 | 2025-01-02 06:55:40+00 | 450    | g     | true                  | true     |
-| Bottled Mineral Water 1,5l | 2025-01-02 06:53:11+00 | 2025-01-03 15:01:32+00 | 1,5    | l     | false                 | true     |
-| Frozen Vegetable Mix       | 2025-01-02 06:55:40+00 | 2025-01-04 00:00:00+00 | 450    | g     | true                  | false    |
+| Bottled Mineral Water 1,5l | 2025-01-02 06:53:11 | 2025-01-02 06:53:11 | 1,5    | l     |                       | false    |
+| Frozen Vegetable Mix       | 2025-01-02 06:55:40 | 2025-01-02 06:55:40 | 450    | g     | true                  | true     |
+| Bottled Mineral Water 1,5l | 2025-01-02 06:53:11 | 2025-01-03 15:01:32 | 1,5    | l     | false                 | true     |
+| Frozen Vegetable Mix       | 2025-01-02 06:55:40 | 2025-01-04 00:00:00 | 450    | g     | true                  | false    |
 
 This can be useful when exploring dataset and trying to figure out why do we have the duplicates.
 

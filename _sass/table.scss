@@ -1,0 +1,39 @@
+table {
+  color: $default-color;
+  background-color: $grey-3;
+  border-color: $default-shade;
+  border-style: solid;
+  border-width: 0 1px 1px 1px;
+  border-radius: 5px;
+  border-collapse: separate;
+  border-spacing: 0;
+  display: table;
+  overflow: auto;
+  // width: 100%;
+  font-family: $sans-serif;
+  margin-bottom: 1rem;
+}
+table thead th {
+  color: $grey-3;
+  background-color: $default-shade;
+  font-weight: bold;
+  font-size: 0.9em;
+  padding: 5px 10px;
+  vertical-align: bottom;
+}
+table thead th:first-child {
+  border-top-left-radius: 5px;
+}
+table thead th:last-child {
+  border-top-right-radius: 5px;
+}
+table tbody td {
+  border-top: 1px solid $default-shade;
+  padding: 5px 10px;
+  vertical-align: top;
+  font-size: 0.9em;
+  text-align: center;
+}
+table tbody tr:nth-child(2n) {
+  background-color: $grey-2;
+}
